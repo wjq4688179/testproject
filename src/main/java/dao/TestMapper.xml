@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.TestMapper">
+
+    <!--id为该Sql语句的唯一标识，resultType表示查询出的结果要封装成的java类型-->
+    <select id="selectAll" resultType="pojo.User">
+        select * from tb_user
+    </select>
+</mapper>
